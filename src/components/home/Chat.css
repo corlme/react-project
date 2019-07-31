@@ -1,0 +1,40 @@
+.chat-container .chat-title {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: skyblue;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.chat-container .chat-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container .avarter {
+  position: relative;
+  padding: 0 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  margin-bottom: 10px;
+}
+.chat-container .avarter img {
+  width: 60px;
+  height: 60px;
+}
+.chat-container .avarter .name {
+ position: absolute;
+ left:70px;
+ top: 0;
+}
+.chat-container .avarter .info {
+  position: absolute;
+  left:70px;
+  top: 30px;
+}
+.chat-container .avarter .time {
+  position: absolute;
+  right: 5px;
+  top: 0; 
+}

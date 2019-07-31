@@ -1,9 +1,22 @@
 import React from 'react'
 
+
+import Home from './components/Home'
+import Login from './components/Login'
+
+import {BrowserRouter , Switch, Route, Redirect} from 'react-router-dom'
+
+
 class App extends React.Component {
   render () {
     return (
-      <div>我是根组件</div>
+     <BrowserRouter>
+        <Switch>
+          <Redirect exact path='/' to='/home' />
+          <Route path='/home' component={Home} />
+          <Route path='/login' component={Login} />
+        </Switch>
+     </BrowserRouter>
     )
   }
 }
